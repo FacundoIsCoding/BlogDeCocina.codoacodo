@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Envíanos tu receta</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="img/icon.ico">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="./img/logo.png" alt="Logo" width="70">
+        </div>
+        <h1>Blog de cocina</h1>
+        <div class="menu-toggle">
+            <div class="hamburger"></div>
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <a href="index.html" class="button">Recetas</a>
+        <a href="tureceta.html" class="button">Envíanos tu receta</a>
+        <a href="sobreNosotros.html" class="button">Sobre nosotros</a>
+        <a href="contacto.html" class="button">Contacto</a>
+    </nav>
+
+    <div class="tureceta">
+        <h4>¡Envíanos tu receta!</h4>
+
+        <p>¿Tenés alguna receta para compartir? ¡Completá este formulario para verla publicada en nuestro blog!</p><br>
+
+        <!-- ToDo: Agregar action -->
+        <form action="" method="post">
+
+            <label for="nombre">Ingresá tu nombre:</label>
+            <input type="text" id="nombre" name="nombre">
+
+            <label for="provincia">¿De dónde sos?</label>
+            <select id="provincia" name="provincia">
+                <option value="">Selecciona una provincia</option>
+                <option value="Buenos Aires">Buenos Aires</option>
+                <option value="Catamarca">Catamarca</option>
+                <option value="Chaco">Chaco</option>
+                <option value="Chubut">Chubut</option>
+                <option value="Córdoba">Córdoba</option>
+                <option value="Corrientes">Corrientes</option>
+                <option value="Entre Ríos">Entre Ríos</option>
+                <option value="Formosa">Formosa</option>
+                <option value="Jujuy">Jujuy</option>
+                <option value="La Pampa">La Pampa</option>
+                <option value="La Rioja">La Rioja</option>
+                <option value="Mendoza">Mendoza</option>
+                <option value="Misiones">Misiones</option>
+                <option value="Neuquén">Neuquén</option>
+                <option value="Río Negro">Río Negro</option>
+                <option value="Salta">Salta</option>
+                <option value="San Juan">San Juan</option>
+                <option value="San Luis">San Luis</option>
+                <option value="Santa Cruz">Santa Cruz</option>
+                <option value="Santa Fe">Santa Fe</option>
+                <option value="Santiago del Estero">Santiago del Estero</option>
+                <option value="Tierra del Fuego">Tierra del Fuego</option>
+                <option value="Tucumán">Tucumán</option>
+            </select><br><br>
+
+            <label for="titulo">Título de tu receta:</label>
+            <input type="text" id="titulo" name="titulo">
+
+            <label for="desc">Escribí una breve descripción:</label>
+            <textarea id="desc" name="desc" cols="50"></textarea>
+
+            <label for="foto">Subí una foto:</label>
+            <input type="file" id="foto" name="foto" style="font-size: 13px;"><br><br>
+
+            <label for="ingredientes">Listá los ingredientes:</label>
+            <textarea id="ingredientes" name="ingredientes" cols="50" rows="10"></textarea>
+
+            <label for="pasos">Indicá los pasos de manera ordenada:</label>
+            <textarea id="pasos" name="pasos" cols="50" rows="10"></textarea>
+
+            <input type="submit" value="Enviar">
+
+        </form>
+
+        <footer>
+            <div class="info-contacto">
+                <p><strong>Teléfono:</strong> +00 123 456 789</p>
+                <p><strong>Dirección:</strong> Av. 9 de Julio, C1043 Ciudad Autónoma de Buenos Aires</p>
+                <p><strong>Correo:</strong> contacto@blogdecocina.com</p>
+                <p><strong>Síguenos en:</strong>
+                    <a href="#">Facebook</a> |
+                    <a href="#">Twitter</a> |
+                    <a href="#">Instagram</a>
+                </p>
+            </div><br>
+            <p>© 2024 Blog de Cocina</p>
+        </footer>
+
+        <script src="js/script.js"></script>
+
+    </div>
+</body>
+
+</html>
